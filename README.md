@@ -18,3 +18,7 @@ This css file fixes that and brings back the Opera-GX like sidebar. (As long as 
 
 -----
 Pastebin file for this Project [Pastebin](https://pastebin.com/AzabKsuZ)
+---
+## Note: 
+Noob mistake made. Forgot to version the code while making it so this might have some code that affects whatsapp! can't remember if I removed it or not, and all in all bit lazy to check.... sorry.
+I'm currently using this and it doesnt affect whatsapp! but removing some code might affect it, as I tried in the previous commit, so be warned!
