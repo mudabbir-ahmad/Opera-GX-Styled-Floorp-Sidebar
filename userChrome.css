@@ -43,6 +43,16 @@
     margin-bottom: 0px !important;
     background-color: var(--toolbar-bgcolor, #1c1c1c) !important;
   }
+  #panel-sidebar-box[collapsed="true"],
+  #panel-sidebar-box[hidden="true"],
+  #sidebar-webpanels-box[collapsed="true"],
+  #sidebar-webpanels-box[hidden="true"],
+  #sidebar-box[collapsed="true"],
+  #sidebar-box[hidden="true"] {
+    display: none !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+  }
   #panel-sidebar-box *,
   #panel-sidebar-container *,
   #sidebar-webpanels-box *,
