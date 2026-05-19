@@ -1,0 +1,105 @@
+@charset "UTF-8";
+@import "second-sidebar.css";
+@import "floating-panel.css";
+@-moz-document url(chrome://browser/content/browser.xhtml)
+{
+    #panel-sidebar-select-box,
+    #sidebar-select-box {
+        height: 100% !important;
+        position: relative !important;
+        z-index: 2 !important;
+        border: none !important;
+        border-right: none !important;
+        border-inline-end: none !important;
+        box-shadow: none !important;
+    }
+    #panel-sidebar-splitter,
+    #sidebar-splitter2,
+    #sidebar-separator,
+    .sidebar-splitter,
+    splitter {
+        display: none !important;
+        visibility: collapse !important;
+        width: 0px !important;
+        max-width: 0px !important;
+        border: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    #panel-sidebar-box,
+    #panel-sidebar-container,
+    #sidebar-webpanels-box,
+    #sidebar-box {
+        position: absolute !important;
+        z-index: 2 !important;
+        height: 100% !important;
+        margin-left: 46px !important;
+        overflow: hidden !important;
+        border: none !important;
+        outline: none !important;
+        box-shadow: none !important;
+        padding: 0px !important;
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+        background-color: var(--toolbar-bgcolor, #1c1c1c) !important;
+    }
+    #panel-sidebar-box[collapsed="true"],
+    #panel-sidebar-box[hidden="true"],
+    #sidebar-webpanels-box[collapsed="true"],
+    #sidebar-webpanels-box[hidden="true"],
+    #sidebar-box[collapsed="true"],
+    #sidebar-box[hidden="true"] {
+        display: none !important;
+        visibility: hidden !important;
+        pointer-events: none !important;
+    }
+    #panel-sidebar-box *,
+    #panel-sidebar-container *,
+    #sidebar-webpanels-box *,
+    #sidebar-box * {
+        border: none !important;
+        outline: none !important;
+        box-shadow: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        border-radius: 0px !important;
+        border-top-left-radius: 0px !important;
+        border-bottom-left-radius: 0px !important;
+        border-top-right-radius: 0px !important;
+        border-bottom-right-radius: 0px !important;
+        background-color: var(--toolbar-bgcolor, #1c1c1c) !important;
+    }
+
+    #browser:has(#panel-sidebar-box:not([hidden="true"]):not([collapsed="true"]))
+    #appcontent,
+    #browser:has(
+      #sidebar-webpanels-box:not([hidden="true"]):not([collapsed="true"])
+    )
+    #appcontent,
+    #browser:has(#sidebar-box:not([hidden="true"]):not([collapsed="true"]))
+    #appcontent,
+    #browser:has(#panel-sidebar-box:not([hidden="true"]):not([collapsed="true"]))
+    .browserSidebarContainer,
+    #browser:has(#panel-sidebar-box:not([hidden="true"]):not([collapsed="true"]))
+    tabbrowser-tabpanel,
+    #browser:has(#panel-sidebar-box:not([hidden="true"]):not([collapsed="true"]))
+    .deck-selected,
+    #browser:has(#panel-sidebar-box:not([hidden="true"]):not([collapsed="true"]))
+    .browser-toolbar,
+    #browser:has(#panel-sidebar-box:not([hidden="true"]):not([collapsed="true"]))
+    #webext-panels-stack {
+        border-radius: 0px !important;
+        border: none !important;
+        border-left: none !important;
+        border-inline-start: none !important;
+        box-shadow: none !important;
+        outline: none !important;
+    }
+    #appcontent {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 100% !important;
+        margin-left: 0 !important;
+        border: none !important;
+    }
+}
